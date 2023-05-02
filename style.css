@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  height: auto;
+  border-bottom-right-radius: 30%;
+}
+
+form {
+  display: flex;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+label {
+  color: #737373;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: 5px -2px;
+}
+
+input {
+  width: 3rem;
+  padding: 12px 20px;
+  border: #73737372 solid 1px;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  font-weight: 800;
+}
+
+.button-box {
+  position: absolute;
+  left: 9rem;
+  bottom: -5.3rem;
+}
+
+input[type="submit"] {
+  background-color: #854dff;
+  border-radius: 100%;
+  aspect-ratio: 1;
+  width: 60px;
+  border: none;
+  background-image: url("./assets/images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.result {
+  margin: 7rem 1rem;
+  font-size: 60px;
+  line-height: 6px;
+  font-weight: 400;
+  font-style: italic;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+span {
+  color: #7e49fd;
+  font-weight: 700;
+}
+
+input[type="submit"]:hover {
+  scale: 1.2;
+  background-size: 28px;
+}
+
+input:valid:not(input[type="submit"]):focus {
+  border: 1px #00ff00 solid;
+}
+
+input:invalid:focus {
+  border: 1px #ff0000 solid;
+}
+
+@media only screen and (min-width: 900px) {
+  main {
+    min-width: 35%;
+    padding-left: 5rem;
+  }
+
+  .button-box {
+    left: 0;
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <main>
+      <form>
+        <fieldset class="m-2">
+          <label for="day">DAY</label>
+          <input type="text" name="day" placeholder="DD" required />
+        </fieldset>
+        <fieldset class="m-2">
+          <label for="month">MONTH</label>
+          <input type="text" name="month" placeholder="MM" required />
+        </fieldset>
+        <fieldset class="m-2">
+          <label for="year">YEAR</label>
+          <input type="text" name="year" placeholder="YYYY" required />
+        </fieldset>
+        <div class="button-box">
+          <input type="submit" value="" />
+        </div>
+      </form>
+      <hr />
+      <div class="result">
+        <p><span class="years"></span> years</p>
+        <p><span class="months"></span> months</p>
+        <p><span class="days"></span> days</p>
+      </div>
+    </main>
+  </body>
+</html>
